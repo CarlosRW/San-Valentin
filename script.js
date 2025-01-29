@@ -58,10 +58,14 @@ function moveNoButton() {
   noButton.style.top = `${randomY}px`;
 }
 
-// Optional: Make the "No" button move when hovered
-noButton.addEventListener('mouseover', () => {
-  response.textContent = "Jaja, no puedes tocar el botón No 🤣🫢";
+// Show image and move button when "No" is clicked or hovered
+noButton.addEventListener('click', () => {
   imageContainer.innerHTML = '<img src="https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-laugh-kelli-p-holt-transparent.png" alt="Laughing Snoopy">';
   moveNoButton();
+});
+
+noButton.addEventListener('mouseover', () => {
+  imageContainer.innerHTML = '<img src="https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-laugh-kelli-p-holt-transparent.png" alt="Laughing Snoopy">';
+  response.textContent = "Jaja, no puedes tocar el botón 🤣🫢";
   moveNoButton();
 });
