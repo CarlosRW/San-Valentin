@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebee;
+    color: #d32f2f;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 90%;
+    width: 800px; /* Adjust as needed */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .question {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  #yesButton {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  #noButton {
+    background-color: #f5f5f5;
+    color: #d32f2f;
+    position: absolute;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  #response {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #d32f2f;
+  }
+  
+  #imageContainer {
+    margin-top: 20px;
+    display: none; /* Hide initially */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px; /* Space between images */
+  }
+  
+  .image-grid img {
+    width: 100%; /* Make images fill their grid cells */
+    height: 350px; /* Fixed height for all images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
