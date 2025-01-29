@@ -60,7 +60,6 @@ function moveNoButton() {
 
 // Show image and move button when "No" is clicked or hovered
 noButton.addEventListener('click', () => {
-  imageContainer.innerHTML = '<img src="https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-laugh-kelli-p-holt-transparent.png" alt="Laughing Snoopy">';
   moveNoButton();
 });
 

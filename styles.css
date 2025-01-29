@@ -10,92 +10,101 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .container {
+}
+
+.container {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     max-width: 90%;
-    width: 800px; /* Adjust as needed */
-  }
-  
-  h1 {
+    width: 800px;
+    /* Adjust as needed */
+}
+
+h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
-  
-  p {
+}
+
+p {
     font-size: 1.2rem;
     margin: 10px 0;
-  }
-  
-  .question {
+}
+
+.question {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 20px 0;
-  }
-  
-  .buttons {
+}
+
+.buttons {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between buttons */
-  }
-  
-  button {
+    gap: 20px;
+    /* Space between buttons */
+}
+
+button {
     font-size: 1.2rem;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
-  
-  #yesButton {
+}
+
+#yesButton {
     background-color: #d32f2f;
     color: white;
-  }
-  
-  #noButton {
+}
+
+#noButton {
     background-color: #f5f5f5;
     color: #d32f2f;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     transform: scale(1.1);
-  }
-  
-  #response {
+}
+
+#response {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
     color: #d32f2f;
-  }
-  
-  #imageContainer {
+}
+
+#imageContainer {
     margin-top: 20px;
-  }
-  
-  #imageContainer img {
-    max-width: 200px; /* Smaller image size */
+}
+
+#imageContainer img {
+    max-width: 200px;
+    /* Smaller image size */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 10px; /* Add some spacing */
-  }
-  
-  .image-grid {
+    margin-top: 10px;
+    /* Add some spacing */
+}
+
+.image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 10px; /* Space between images */
-  }
-  
-  .image-grid img {
-    width: 100%; /* Make images fill their grid cells */
-    height: 350px; /* Fixed height for all images */
-    object-fit: cover; /* Ensure images cover the area without distortion */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 10px;
+    /* Space between images */
+}
+
+.image-grid img {
+    width: 100%;
+    /* Make images fill their grid cells */
+    height: 350px;
+    /* Fixed height for all images */
+    object-fit: cover;
+    /* Ensure images cover the area without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
+}
