@@ -1,15 +1,15 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffebee;
+    background-color: #FFC2D1;
     color: #d32f2f;
     text-align: center;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-Y: auto;
 }
 
 .container {
@@ -19,8 +19,8 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     max-width: 90%;
-    width: 800px;
-    /* Adjust as needed */
+    width: 800px; /* Adjust as needed */
+    margin: 20px 0;
 }
 
 h1 {
@@ -43,8 +43,7 @@ p {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-    /* Space between buttons */
+    gap: 20px;   /* Space between buttons */
 }
 
 button {
@@ -71,7 +70,7 @@ button:hover {
 }
 
 #response {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-top: 20px;
     color: #d32f2f;
@@ -83,28 +82,29 @@ button:hover {
 
 #imageContainer img {
     max-width: 200px;
-    /* Smaller image size */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin-top: 10px;
-    /* Add some spacing */
 }
 
 .image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns */
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    /* Space between images */
+    justify-content: center;
 }
 
 .image-grid img {
-    width: 100%;
-    /* Make images fill their grid cells */
-    height: 350px;
-    /* Fixed height for all images */
-    object-fit: cover;
-    /* Ensure images cover the area without distortion */
+    width: calc(50% - 10px);    /* Two images per row on mobile */
+    height: 350px;              /* Fixed height for all images */
+    object-fit: cover;          /* Ensure images cover the area without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+    .image-grid img {
+        width: calc(33.33% - 10px);     /* Three images per row on larger screens */
+    }
 }
