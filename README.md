@@ -60,6 +60,38 @@ Puedes personalizar este proyecto para que sea único:
 
 - Añade más características, para que sea aún más especial.
 
+## 🏹 Futuras Mejoras
+Este proyecto está en constante evolución. Aquí hay algunas ideas para futuras mejoras:
+
+1. Idiomas Adicionales
+Permitir cambiar el idioma del sitio (por ejemplo, inglés, francés, etc.).
+
+2. Contador de Tiempo
+Mostrar un contador que indique cuánto tiempo falta para San Valentín o una fecha especial.
+
+3. Animaciones de Confeti
+Agregar una animación de confeti cuando se hace clic en el botón "Sí" para celebrar el momento.
+
+4. Galería de Fotos Personalizada
+Crear una galería interactiva con fotos de momentos especiales juntos.
+Añadir un efecto de zoom o un carrusel de imágenes.
+
+5. Quiz de Amor
+Añadir un cuestionario divertido sobre la relación para que tu pareja lo complete.
+
+6. Compartir en Redes Sociales
+Agregar un botón para compartir la página en redes sociales como Twitter, Facebook o Instagram.
+
+7. Música de Fondo
+Añadir una canción que se reproduzca automáticamente al cargar la página.
+Permitir al usuario controlar la reproducción (play/pause).
+
+9. Guardar Preferencias
+Guardar las preferencias del usuario (como el modo oscuro) usando localStorage.
+
+10. Diseño Mejorado
+Añadir más animaciones y transiciones para hacer el sitio más dinámico y atractivo.
+
 ## 💖 Apoya al proyecto
 Casi todos mis proyectos son de código abierto e intento responder a todos los usuarios que necesiten ayuda con alguno de estos proyectos. Obviamente, esto toma tiempo. Puedes usar este servicio gratis.
 
@@ -69,6 +101,10 @@ No obstante, si estás utilizando este proyecto y estás feliz con él o simplem
 - [![paypal.me/carlosrw231005](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/carlosrw231005) - Puedes hacerme una única donación a través de PayPal. Probablemente me compraré un café/té. :tea:
 
 ¡Gracias! :heart:
+
+---
+
+¡Las contribuciones son bienvenidas! <3
 
 ¡Espero que disfrutes este proyecto tanto como yo disfruté creándolo! 💖
 
