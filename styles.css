@@ -19,7 +19,8 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     max-width: 90%;
-    width: 800px; /* Adjust as needed */
+    width: 800px;
+    /* Adjust as needed */
     margin: 20px 0;
 }
 
@@ -43,7 +44,8 @@ p {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;   /* Space between buttons */
+    gap: 20px;
+    /* Space between buttons */
 }
 
 button {
@@ -63,6 +65,9 @@ button {
 #noButton {
     background-color: #f5f5f5;
     color: #d32f2f;
+    transition: transform 0.5s ease;
+    z-index: 1000;
+    /* Ensure the button is always on top */
 }
 
 button:hover {
@@ -95,9 +100,12 @@ button:hover {
 }
 
 .image-grid img {
-    width: calc(50% - 10px);    /* Two images per row on mobile */
-    height: 350px;              /* Fixed height for all images */
-    object-fit: cover;          /* Ensure images cover the area without distortion */
+    width: calc(50% - 10px);
+    /* Two images per row on mobile */
+    height: 350px;
+    /* Fixed height for all images */
+    object-fit: cover;
+    /* Ensure images cover the area without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -105,48 +113,54 @@ button:hover {
 /* Adjust for larger screens */
 @media (min-width: 768px) {
     .image-grid img {
-        width: calc(33.33% - 10px);     /* Three images per row on larger screens */
+        width: calc(33.33% - 10px);
+        /* Three images per row on larger screens */
     }
 }
 
 /* Animation for the grid container */
 @keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  /* Animation for the response message */
-  @keyframes slideIn {
+}
+
+/* Animation for the response message */
+@keyframes slideIn {
     from {
-      opacity: 0;
-      transform: translateY(20px);
+        opacity: 0;
+        transform: translateY(20px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-  
-  /* Apply animations to the grid and message */
-  .image-grid {
+}
+
+/* Apply animations to the grid and message */
+.image-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    animation: fadeIn 1s ease-out; /* Fade-in animation for the grid */
-  }
-  
-  #response {
+    animation: fadeIn 1s ease-out;
+    /* Fade-in animation for the grid */
+}
+
+#response {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 20px;
     color: #d32f2f;
-    animation: slideIn 1s ease-out 0.5s; /* Slide-in animation for the message (with delay) */
-    animation-fill-mode: both; /* Ensure the final state is applied after animation */
-  }
+    animation: slideIn 1s ease-out 0.5s;
+    /* Slide-in animation for the message (with delay) */
+    animation-fill-mode: both;
+    /* Ensure the final state is applied after animation */
+}

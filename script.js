@@ -4,6 +4,8 @@ const response = document.getElementById('response');
 const imageContainer = document.getElementById('imageContainer');
 const container = document.querySelector('.container');
 
+let isFirstClick = true; // Flag to track the first click
+
 yesButton.addEventListener('click', () => {
   // Clear everything in the container
   container.innerHTML = '';
@@ -25,7 +27,7 @@ yesButton.addEventListener('click', () => {
   images.forEach((src) => {
     const img = document.createElement('img');
     img.src = src;
-    img.alt = 'Romantic Image';
+    img.alt = 'Cute Snoopy Image';
     gridContainer.appendChild(img);
   });
 
@@ -35,7 +37,7 @@ yesButton.addEventListener('click', () => {
   // Add the response message
   const message = document.createElement('p');
   message.id = 'response';
-  message.textContent = "Yay! You've made me the happiest person! 💖";
+  message.textContent = "Me haces la persona más feliz del mundo, TE AMO! 💖";
   container.appendChild(message);
 });
 
@@ -60,6 +62,15 @@ function moveNoButton() {
 
 // Show image and move button when "No" is clicked or hovered
 noButton.addEventListener('click', () => {
+  if (isFirstClick) {
+    // Apply a transition effect on the first click
+    noButton.style.transition = 'transform 0.5s ease';
+    noButton.style.transform = 'scale(1.2)'; // Example: Scale up the button
+    setTimeout(() => {
+      noButton.style.transform = 'scale(1)'; // Reset the scale
+      isFirstClick = false; // Mark the first click as done
+    }, 500); // Duration of the transition
+  }
   moveNoButton();
 });
 
