@@ -17,11 +17,11 @@ yesButton.addEventListener('click', () => {
   // Add images to the grid
   const images = [
     'https://images.fineartamerica.com/images/artworkimages/medium/3/1-snoopy-woodstock-love-darrell-c-rose-transparent.png',
-    'https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-flower-jennifer-s-payne-transparent.png',
+    'https://dtfdallas.com/cdn/shop/files/a_5-602837.png?v=1720257035',
     'https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-love-wayne-k-roark-transparent.png',
     'https://i.pinimg.com/originals/36/b2/c3/36b2c356acab57ef56a08c5572361b2d.png',
     'https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-love-derek-b-mcdaniel-transparent.png',
-    'https://i.pinimg.com/736x/ab/74/6f/ab746fc1c2843d483fe55c5511586532.jpg',
+    'https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-joe-cool-grace-a-waldo-transparent.png',
   ];
 
   images.forEach((src) => {
@@ -71,11 +71,26 @@ noButton.addEventListener('click', () => {
       isFirstClick = false; // Mark the first click as done
     }, 500); // Duration of the transition
   }
+  mouseoverNoButton()
   moveNoButton();
+  
 });
+function mouseoverNoButton() {
+  noButton.addEventListener('mouseover', () => {
+    imageContainer.innerHTML = '<img src="https://i.pinimg.com/564x/dd/7f/6c/dd7f6ca2bce302e27f51b579ef732aeb.jpg" alt="Laughing Snoopy">';
+    response.textContent = "Jaja, no puedes tocar el botón 🤣🫢";
+    moveNoButton();
+  });
+}
+const darkModeToggle = document.getElementById('darkModeToggle');
 
-noButton.addEventListener('mouseover', () => {
-  imageContainer.innerHTML = '<img src="https://images.fineartamerica.com/images/artworkimages/medium/3/snoopy-laugh-kelli-p-holt-transparent.png" alt="Laughing Snoopy">';
-  response.textContent = "Jaja, no puedes tocar el botón 🤣🫢";
-  moveNoButton();
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  // Update button text based on the current mode
+  if (document.body.classList.contains('dark-mode')) {
+    darkModeToggle.textContent = 'Modo Claro ☀️';
+  } else {
+    darkModeToggle.textContent = 'Modo Oscuro 🌙';
+  }
 });
