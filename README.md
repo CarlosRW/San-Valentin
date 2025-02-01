@@ -8,10 +8,10 @@ Este sitio web interactivo está diseñado para hacer una pregunta muy important
 
 ## 📸 Imagen del proyecto
 Modo Claro ☀️: 
-![Vista previa del proyecto Modo Claro](https://github.com/CarlosRW/Amigo-Secreto/blob/main/assets/imagen%20proyecto%20amigo-secreto.png?raw=true)
+![Vista previa del proyecto Modo Claro](https://github.com/CarlosRW/San-Valentin/blob/main/img/imgSVClaro.png?raw=true)
 -
 Modo Oscuro 🌑: 
-![Vista previa del proyecto Modo Claro](https://github.com/CarlosRW/Amigo-Secreto/blob/main/assets/imagen%20proyecto%20amigo-secreto.png?raw=true)
+![Vista previa del proyecto Modo Claro](https://github.com/CarlosRW/San-Valentin/blob/main/img/imgSVOscuro.png?raw=true)
 -
 ## 🚀 Características Principales
 - **Pregunta Interactiva:** Un botón de "Sí" y un botón de "No" con comportamientos únicos.
@@ -34,8 +34,10 @@ Sigue estos pasos para ejecutar el proyecto en tu computadora local:
 3. (Opcional) Usar un servidor local: Si prefieres un entorno local más avanzado: Instala un servidor web como "Live Server" en Visual Studio Code (VSCode). Haz clic derecho en el archivo index.html y selecciona "Open with Live Server".
 
 ## 📚 Uso
-
-![Vista previa del proyecto](https://github.com/CarlosRW/Amigo-Secreto/blob/main/assets/imagen%20proyecto%20amigo-secreto.png?raw=true)
+- Haz clic en "Sí" para ver una galería de imágenes y un mensaje especial.
+- Intenta hacer clic en "No" para ver cómo se mueve y muestra una imagen divertida.
+- Usa el botón "Modo Oscuro 🌙" para cambiar entre temas claro y oscuro.
+![Vista previa de la galería de imagenes](https://github.com/CarlosRW/San-Valentin/blob/main/img/imgSVGaler%C3%ADa.png?raw=true)
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -58,6 +60,15 @@ Puedes personalizar este proyecto para que sea único:
 
 - Añade más características, para que sea aún más especial.
 
+## 💖 Apoya al proyecto
+Casi todos mis proyectos son de código abierto e intento responder a todos los usuarios que necesiten ayuda con alguno de estos proyectos. Obviamente, esto toma tiempo. Puedes usar este servicio gratis.
+
+No obstante, si estás utilizando este proyecto y estás feliz con él o simplemente quieres animarme a que siga creando cosas, aquí tienes algunas maneras de hacerlo:
+
+- Dándole una estrella y compartiendo el proyecto :rocket:
+- [![paypal.me/carlosrw231005](https://ionicabizau.github.io/badges/paypal.svg)](https://www.paypal.me/carlosrw231005) - Puedes hacerme una única donación a través de PayPal. Probablemente me compraré un café/té. :tea:
+
+¡Gracias! :heart:
 
 ¡Espero que disfrutes este proyecto tanto como yo disfruté creándolo! 💖
 
